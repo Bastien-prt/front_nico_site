@@ -11,7 +11,7 @@ const [ ardoises, setArdoises ] = useState([]);
         .then(resp => setArdoises(resp.data))
     }, [])
     return (
-      <div className="mb-44 w-11/12 my-0 mx-auto">
+      <div id="products" className="mb-44 w-11/12 my-0 mx-auto">
           
         <p className="text-lightGray font-thin mb-4"> {ardoises.length} articles  </p>
         <div className="flex justify-between flex-wrap">

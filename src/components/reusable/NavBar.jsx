@@ -1,6 +1,8 @@
 import { useState } from 'react';
 import { Link } from 'react-router-dom';
 
+import { RiShoppingBagLine } from 'react-icons/ri';
+
 import "./NavBar.scss"
 
 function NavBar() {
@@ -30,8 +32,8 @@ function NavBar() {
                 <li> <Link to="/contact"> Contact </Link> </li>
               </div>
               <div className="flex">
-                <li> Login </li>
-                <li> Shop </li>
+                <li> <Link to="/login"> Login </Link></li>
+                <li className="flex justify-center items-center"> <RiShoppingBagLine />  </li>
               </div>
             </ul>
          
